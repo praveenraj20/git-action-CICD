@@ -1,5 +1,6 @@
 # git-action-CICD
-update execute permission for gradlew command
+
+to update the execute permission for gradlew command
 
 -> git update-index --chmod=+x gradlew
 
