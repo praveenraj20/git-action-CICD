@@ -35,10 +35,9 @@ jobs:
           push: true
           tags: ltpraveen/git-action-cicd:latest
       - name: Kuberentes (k8s) cli - kubectl
-      - uses: actions/checkout@v1
-      - uses: actions-hub/kubectl@master
-        env:
-          KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }}
+        uses: actions-hub/kubectl@v1.24.0
+        env :
+         KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }}
         with:
           args: get pods -n flexcub-testing
 
