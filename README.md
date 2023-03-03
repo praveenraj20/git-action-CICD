@@ -6,6 +6,6 @@ to update the execute permission for gradlew command
 
 -> git add .
 
--> git commit -m "commit message"
+-> git commit -m "update execute permission for gradlew command"
 
 -> git push 
